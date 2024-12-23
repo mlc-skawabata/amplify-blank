@@ -3,6 +3,6 @@
     "start": "ts-node src/index.ts",
     "build": "tsc",
     "serve": "node dist/index.js",
-    "postbuild": "chmod +x bin/postbuild.sh && ./bin/postbuild.sh"
+    "postbuild": "find . && chmod +x bin/postbuild.sh && ./bin/postbuild.sh"
   }
 }

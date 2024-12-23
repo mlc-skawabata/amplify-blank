@@ -13,6 +13,13 @@
     "minimumCacheTTL": 60,
     "dangerouslyAllowSVG": false
   },
+  "computeResources": [
+    {
+      "name": "default",
+      "entrypoint": "server.js",
+      "runtime": "nodejs18.x"
+    }
+  ],
   "routes": [
     {
       "path": "/*.*",

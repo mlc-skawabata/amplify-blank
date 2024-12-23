@@ -4,11 +4,11 @@ frontend:
     preBuild:
       commands:
         - node -v
-        - npm ci
     build:
-      commands: []
+      commands:
+        - npm run postbuild
   artifacts:
-    baseDirectory: /
+    baseDirectory: .amplify-hosting
     files:
       - '**/*'
   cache:

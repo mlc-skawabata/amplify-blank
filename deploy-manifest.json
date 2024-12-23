@@ -1,5 +1,6 @@
 {
   "version": 1,
+  "framework": { "name": "test", "version": "0.0.1" },
   "imageSettings": {
     "sizes": [
       100,
@@ -18,6 +19,13 @@
       "target": {
         "kind": "Static",
         "cacheControl": "public, max-age=2"
+      }
+    },
+    {
+      "path": "/*",
+      "target": {
+        "kind": "Compute",
+        "src": "default"
       }
     }
   ]
